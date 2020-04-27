@@ -1,3 +1,3 @@
-# Swifty-Notes
+# Swift-SmartConverter
 
-Notes app demo sourcecode (to go along with video on iOS Academy)
+
