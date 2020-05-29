@@ -1,3 +1,3 @@
-# Swifty-Notes
+# Курсовая
 
-Notes app demo sourcecode (to go along with video on iOS Academy)
+Курсовая работа по валютам 
