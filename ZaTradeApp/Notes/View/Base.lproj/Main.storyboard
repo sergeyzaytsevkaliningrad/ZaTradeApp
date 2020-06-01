@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9EI-1W-2fV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9EI-1W-2fV">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01mathP" id="MF3-1G-aAg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZaTrade_Background" id="MF3-1G-aAg">
                                 <rect key="frame" x="-128" y="-119" width="661" height="1162"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -186,8 +186,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01mathP" translatesAutoresizingMaskIntoConstraints="NO" id="SM5-kU-CI2">
-                                <rect key="frame" x="-31" y="-83" width="476" height="1062"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZaTrade_Background" translatesAutoresizingMaskIntoConstraints="NO" id="SM5-kU-CI2">
+                                <rect key="frame" x="-111.5" y="-83" width="637" height="1062"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BMc-0D-ah9">
                                 <rect key="frame" x="20" y="44" width="374" height="769"/>
@@ -202,20 +202,24 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9U-0h-frd">
-                                        <rect key="frame" x="204" y="51" width="156" height="57"/>
+                                        <rect key="frame" x="170" y="51" width="190" height="57"/>
                                         <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                        <state key="normal" title="Страна 1 "/>
+                                        <state key="normal" title="Финляндия"/>
+                                        <connections>
+                                            <segue destination="C9h-aL-mlY" kind="show" id="2tt-0D-WVJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="4Wk-h3-yeA" secondAttribute="bottom" constant="661" id="9qF-zG-e87"/>
+                                    <constraint firstItem="Vod-wg-QpP" firstAttribute="trailing" secondItem="n9U-0h-frd" secondAttribute="trailing" constant="14" id="NFi-im-3E0"/>
                                     <constraint firstAttribute="trailing" secondItem="4Wk-h3-yeA" secondAttribute="trailing" constant="214" id="O4F-rO-wWg"/>
                                     <constraint firstItem="4Wk-h3-yeA" firstAttribute="top" secondItem="Vod-wg-QpP" secondAttribute="top" constant="51" id="ZZw-ZR-uOi"/>
                                     <constraint firstItem="4Wk-h3-yeA" firstAttribute="leading" secondItem="BMc-0D-ah9" secondAttribute="leadingMargin" id="ace-ca-72c"/>
                                     <constraint firstItem="n9U-0h-frd" firstAttribute="baseline" secondItem="4Wk-h3-yeA" secondAttribute="baseline" id="fkx-6D-BuN"/>
                                     <constraint firstItem="4Wk-h3-yeA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BMc-0D-ah9" secondAttribute="leadingMargin" id="mTH-0e-iZU"/>
-                                    <constraint firstItem="n9U-0h-frd" firstAttribute="leading" secondItem="4Wk-h3-yeA" secondAttribute="trailing" constant="69" id="yHW-17-61Q"/>
+                                    <constraint firstItem="n9U-0h-frd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4Wk-h3-yeA" secondAttribute="trailing" constant="8" symbolic="YES" id="yHW-17-61Q"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="91q-kL-Nkk"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Vod-wg-QpP"/>
@@ -246,8 +250,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01mathP" translatesAutoresizingMaskIntoConstraints="NO" id="llY-Lm-5nm">
-                                <rect key="frame" x="-31" y="-110" width="476" height="1062"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZaTrade_Background" translatesAutoresizingMaskIntoConstraints="NO" id="llY-Lm-5nm">
+                                <rect key="frame" x="-111.5" y="-110" width="637" height="1062"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLu-bZ-pNQ">
                                 <rect key="frame" x="20" y="20" width="374" height="788"/>
@@ -280,7 +284,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01mathP" id="qJo-Tt-ibS">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZaTrade_Background" id="qJo-Tt-ibS">
                                 <rect key="frame" x="-106" y="-91" width="627" height="1078"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -345,14 +349,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01mathP" translatesAutoresizingMaskIntoConstraints="NO" id="X1u-fn-q0Q">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZaTrade_Background" translatesAutoresizingMaskIntoConstraints="NO" id="X1u-fn-q0Q">
                                 <rect key="frame" x="0.0" y="-47" width="414" height="943"/>
                             </imageView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wje-2S-3ba">
-                                <rect key="frame" x="79" y="637" width="258" height="216"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqC-1Y-l5R">
                                 <rect key="frame" x="79" y="487" width="258" height="71"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -368,7 +367,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZA_1" translatesAutoresizingMaskIntoConstraints="NO" id="fCE-Gh-LW1">
-                                <rect key="frame" x="50" y="167" width="314.00000000000011" height="261.00000000000011"/>
+                                <rect key="frame" x="50" y="167" width="314" height="261"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260.99999999999989" id="z4v-Hd-zuc"/>
                                 </constraints>
@@ -381,14 +380,11 @@
                             <constraint firstItem="lqC-1Y-l5R" firstAttribute="leading" secondItem="54i-Vd-NzZ" secondAttribute="leading" constant="79" id="GYl-r8-ag3"/>
                             <constraint firstItem="X1u-fn-q0Q" firstAttribute="top" secondItem="eLb-9z-DGr" secondAttribute="top" constant="-47" id="NTX-dK-rbf"/>
                             <constraint firstItem="X1u-fn-q0Q" firstAttribute="leading" secondItem="54i-Vd-NzZ" secondAttribute="leading" id="NzD-wu-Mwp"/>
-                            <constraint firstItem="lqC-1Y-l5R" firstAttribute="leading" secondItem="Wje-2S-3ba" secondAttribute="leading" id="Rvr-jf-Q78"/>
                             <constraint firstItem="fCE-Gh-LW1" firstAttribute="leading" secondItem="54i-Vd-NzZ" secondAttribute="leading" constant="50" id="YWf-AI-X0f"/>
                             <constraint firstItem="X1u-fn-q0Q" firstAttribute="trailing" secondItem="54i-Vd-NzZ" secondAttribute="trailing" id="Zm0-6n-ZhE"/>
-                            <constraint firstItem="lqC-1Y-l5R" firstAttribute="trailing" secondItem="Wje-2S-3ba" secondAttribute="trailing" id="gPF-b6-iUO"/>
                             <constraint firstItem="lqC-1Y-l5R" firstAttribute="top" secondItem="fCE-Gh-LW1" secondAttribute="bottom" constant="59.000000000000114" id="hjU-AH-Pbf"/>
                             <constraint firstItem="X1u-fn-q0Q" firstAttribute="leading" secondItem="54i-Vd-NzZ" secondAttribute="leading" id="umn-wp-zjj"/>
                             <constraint firstAttribute="bottom" secondItem="X1u-fn-q0Q" secondAttribute="bottom" id="v9F-cm-8ct"/>
-                            <constraint firstItem="Wje-2S-3ba" firstAttribute="top" secondItem="lqC-1Y-l5R" secondAttribute="bottom" constant="79" id="wT8-bh-DgS"/>
                             <constraint firstItem="fCE-Gh-LW1" firstAttribute="top" secondItem="54i-Vd-NzZ" secondAttribute="top" constant="123" id="ygt-k8-dwZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="54i-Vd-NzZ"/>
@@ -416,13 +412,54 @@
             </objects>
             <point key="canvasLocation" x="2811.594202898551" y="184.82142857142856"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="4o4-cJ-vkz">
+            <objects>
+                <viewController id="C9h-aL-mlY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fg6-5T-aZ4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZaTrade_Background" translatesAutoresizingMaskIntoConstraints="NO" id="jyh-Kj-iCb">
+                                <rect key="frame" x="-111.5" y="-83" width="637" height="1062"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3k-5s-bBa">
+                                <rect key="frame" x="20" y="20" width="374" height="788"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Финляндия   Практически во всех крупных магазинах Финляндии действует система безналоговой торговли для туристов. Что же это значит и каким образом можно сэкономить на покупках при помощи tax free?  Дословный перевод словосочетания tax free с английского языка довольно понятно отражает смысл этого выражения: tax означает «налог», free – «свободный». Во всех странах Европейского Союза в стоимость товара входит налог на добавочную стоимость (НДС), который, согласно законодательству стран ЕС, у Вас есть право вернуть при выезде из страны.                                                            Tax Free шопинг в Финляндии 
+   TAXFREE                        
+Стандартная ставка НДС: 24%
+Продукты питания: 14%
+Медицинские изделия, книги: 10%
+Минимальная сумма покупки: 40 EUR
+   Когда можно вернуть деньги ?
+1)Если вы постоянно проживаете в стране, не состоящей в Евросоюзе (кроме Норвегии). 2)Если вы совершаете покупки за две недели до окончания разрешения на постоянное пребывание или работу в Финляндии. </string>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jyh-Kj-iCb" firstAttribute="centerY" secondItem="Fg6-5T-aZ4" secondAttribute="centerY" id="aeN-9t-azw"/>
+                            <constraint firstItem="jyh-Kj-iCb" firstAttribute="centerX" secondItem="Fg6-5T-aZ4" secondAttribute="centerX" id="oui-sj-p3C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CY4-r7-Mv2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iRh-dZ-2fr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UzU-Xg-WTV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5287" y="1307"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="01mathP" width="476" height="1062"/>
         <image name="ZA_1" width="499" height="498"/>
         <image name="Za" width="503" height="503"/>
-        <image name="camera.fill" catalog="system" width="64" height="48"/>
-        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
-        <image name="table.fill" catalog="system" width="64" height="46"/>
+        <image name="ZaTrade_Background" width="637" height="1062"/>
+        <image name="camera.fill" catalog="system" width="128" height="96"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="table.fill" catalog="system" width="128" height="93"/>
     </resources>
 </document>
